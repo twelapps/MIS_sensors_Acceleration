@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity  {
         rollDice();
     }
 
-    //TODO 5: when onPause, unregister for the system service
+    //TODO 6: when onPause, unregister for the system service
     @Override
     public void onPause() {
         // Add the following line to unregister the Sensor Manager onPause
@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity  {
         super.onPause();
     }
 
-    //TODO 6: when onResume, re-register for the system service
+    //TODO 7: when onResume, re-register for the system service
     @Override
     public void onResume() {
         super.onResume();
@@ -97,6 +97,7 @@ public class MainActivity extends AppCompatActivity  {
         return super.onOptionsItemSelected(item);
     }
 
+    //TODO 5: analyze the rollDice() method invoked by the callback method
     private void rollDice() {
         newTrow = randomGenerator.nextInt(6);
 
